@@ -1,0 +1,226 @@
+/* ==============================
+   1. GENERAL PAGE STYLING
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f6f9;
+    color: #252b36;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ==============================
+   2. HEADER
+================================= */
+
+header {
+    background-color: #142b4a;
+    color: white;
+    padding: 1rem;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.site-brand img {
+    width: 45px;
+    height: 45px;
+}
+
+#menu-button {
+    display: block;
+    margin: 1rem 0 0 auto;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   3. NAVIGATION
+================================= */
+
+#primary-nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#primary-nav.open {
+    display: flex;
+}
+
+#primary-nav a {
+    display: block;
+    padding: 0.8rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid #52647b;
+}
+
+#primary-nav a:hover,
+#primary-nav a.active {
+    background-color: #d6a63c;
+    color: #142b4a;
+}
+
+
+/* ==============================
+   4. MAIN CONTENT
+================================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: #142b4a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.8rem;
+    background-color: #142b4a;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.about-section,
+.photo-section,
+.certificate-section {
+    background-color: white;
+    border: 1px solid #d5dce5;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.section-content {
+    padding: 1rem;
+}
+
+.section-content p {
+    margin-top: 0;
+}
+
+
+/* ==============================
+   5. COURSE FILTER BUTTONS
+================================= */
+
+.course-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course-filters button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #142b4a;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.course-filters button:hover {
+    background-color: #d6a63c;
+    color: #142b4a;
+}
+
+#credit-count {
+    text-align: center;
+    font-weight: 700;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.course-card h3 {
+    margin: 0 0 0.5rem;
+    color: #142b4a;
+}
+
+.course-card p {
+    margin: 0.3rem 0;
+    font-weight: 400;
+}
+
+.course-card.completed h3 {
+    color: #285b32;
+}
+
+
+/* ==============================
+   6. FOOTER
+================================= */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #d6a63c;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
