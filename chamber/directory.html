@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore the Accra Chamber of Commerce business directory. Discover businesses, services, and opportunities across Accra, Ghana.">
+    <meta name="author" content="Kelvin O. Van-Addo">
+
+    <title>Business Directory | Accra Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook / Open Graph Meta Tags -->
+    <meta property="og:title" content="Accra Chamber of Commerce | Business Directory">
+    <meta property="og:description"
+        content="Discover businesses, services, and opportunities across Accra, Ghana. Connect with local businesses through our directory.">
+    <meta property="og:image" content="https://kovan-addo.github.io/wdd231/chamber/images/chamber-social.jpg">
+    <meta property="og:url" content="https://kovan-addo.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-branding">
+            <a href="index.html" class="logo">
+                <img src="images/chamber-logo.png" alt="Accra Chamber of Commerce logo">
+            </a>
+
+            <div class="site-name">
+                <span>Accra</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="directory-controls">
+            <button id="grid-view" class="active" aria-label="Display businesses in grid view" aria-pressed="true">
+                Grid View
+            </button>
+
+            <button id="list-view" aria-label="Display businesses in list view" aria-pressed="false">
+                List View
+            </button>
+        </div>
+
+        <div id="members-container" class="grid-view">
+            <!-- Business information will be loaded here from members.json -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-information">
+            <h2>Accra Chamber of Commerce</h2>
+            <p>Accra, Greater Accra Region, Ghana</p>
+            <p>Email: info@accrachamber.example</p>
+            <p>Phone: +233 30 000 0000</p>
+        </div>
+
+        <div class="development-information">
+            <p>&copy; <span id="current-year"></span> Accra Chamber of Commerce</p>
+            <p>Developed by Kelvin O. Van-Addo</p>
+            <p>WDD 231 - Web Frontend Development I</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
