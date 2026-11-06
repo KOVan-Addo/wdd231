@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "MTN Ghana",
+            "category": "Telecommunications",
+            "address": "MTN House, Independence Avenue, West Ridge, Accra, Ghana",
+            "phone": "+233 24 430 0000",
+            "website": "https://mtn.com.gh/",
+            "image": "mtn-ghana.jpg",
+            "membershipLevel": 3,
+            "description": "MTN Ghana is a leading telecommunications provider offering mobile voice, data, digital and mobile money services across Ghana."
+        },
+        {
+            "name": "Huawei Technologies Ghana",
+            "category": "Technology and ICT",
+            "address": "38 Church Crescent, Labone, Accra, Ghana",
+            "phone": "+233 30 277 0594",
+            "website": "https://www.huawei.com/",
+            "image": "huawei-ghana.jpg",
+            "membershipLevel": 2,
+            "description": "Huawei Technologies Ghana provides information and communications technology solutions, telecommunications infrastructure and enterprise technology services."
+        },
+        {
+            "name": "Absa Bank Ghana",
+            "category": "Banking and Finance",
+            "address": "Absa House, J.E. Atta-Mills High Street, Accra, Ghana",
+            "phone": "+233 30 242 9150",
+            "website": "https://www.absa.com.gh/",
+            "image": "absa-bank.jpg",
+            "membershipLevel": 3,
+            "description": "Absa Bank Ghana provides personal banking, business banking, corporate banking and financial services to individuals and organisations."
+        },
+        {
+            "name": "Standard Chartered Bank Ghana",
+            "category": "Banking and Finance",
+            "address": "87 Independence Avenue, Ridge, Accra, Ghana",
+            "phone": "+233 30 263 3393",
+            "website": "https://www.sc.com/gh/",
+            "image": "standard-chartered.jpg",
+            "membershipLevel": 2,
+            "description": "Standard Chartered Bank Ghana offers personal, business and corporate banking, wealth management and financial services."
+        },
+        {
+            "name": "ZEN Petroleum",
+            "category": "Energy and Petroleum",
+            "address": "13 Patrice Lumumba Road, Airport Residential Area, Accra, Ghana",
+            "phone": "+233 30 261 1328",
+            "website": "https://www.zenpetroleum.com/",
+            "image": "zen-petroleum.jpg",
+            "membershipLevel": 3,
+            "description": "ZEN Petroleum is a Ghanaian-owned oil marketing company providing petroleum products, lubricants and industrial fuel supply services."
+        },
+        {
+            "name": "Accra City Hotel",
+            "category": "Hospitality",
+            "address": "Barnes Road, West Ridge, Accra, Ghana",
+            "phone": "+233 30 263 3863",
+            "website": "https://www.accracityhotel.com/",
+            "image": "accra-city-hotel.jpg",
+            "membershipLevel": 2,
+            "description": "Accra City Hotel is a four-star hotel offering accommodation, dining, conference facilities and hospitality services in central Accra."
+        },
+        {
+            "name": "Accra Mall",
+            "category": "Retail and Shopping",
+            "address": "Plot C11, Tetteh Quarshie Interchange, Spintex Road, Accra, Ghana",
+            "phone": "+233 30 282 3039",
+            "website": "https://www.accramall.com/",
+            "image": "accra-mall.jpg",
+            "membershipLevel": 3,
+            "description": "Accra Mall is a major shopping destination featuring retail stores, restaurants, entertainment and other consumer services."
+        }
+    ]
+}
