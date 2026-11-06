@@ -1,0 +1,36 @@
+/* ==============================
+   NORMALIZE CSS
+================================= */
+
+/* Consistent box sizing */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Remove default body margin */
+body {
+    margin: 0;
+}
+
+/* Responsive media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+}
+
+/* Consistent form element fonts */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}

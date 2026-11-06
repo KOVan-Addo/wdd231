@@ -1,0 +1,91 @@
+/* TABLET AND DESKTOP STYLES */
+
+@media screen and (min-width: 38rem) {
+
+    /* HEADER AND NAVIGATION */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #main-navigation {
+        display: block;
+    }
+
+    #main-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        margin: 0;
+    }
+
+    #main-navigation li {
+        border: none;
+    }
+
+    #main-navigation a {
+        padding: 0.7rem;
+        border-radius: 4px;
+    }
+
+    /* BUSINESS GRID */
+
+    #members-container.grid-view {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* BUSINESS LIST */
+
+    #members-container.list-view .member-card {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    #members-container.list-view .member-card h2 {
+        grid-column: 1 / -1;
+    }
+
+    #members-container.list-view .member-card img {
+        display: block;
+        grid-column: 1;
+        grid-row: 2 / span 6;
+        width: 100%;
+        max-width: 180px;
+        height: 130px;
+        object-fit: contain;
+    }
+}
+
+/* WIDER DESKTOP SCREENS */
+
+@media screen and (min-width: 64rem) {
+
+    #members-container.grid-view {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .member-card {
+        padding: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,244 @@
+/* GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: #142b4a;
+    color: white;
+    padding: 1rem;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.site-name span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.site-name p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* MOBILE NAVIGATION */
+
+#menu-button {
+    display: block;
+    margin: 1rem 0 0 auto;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#main-navigation {
+    display: none;
+}
+
+#main-navigation.open {
+    display: block;
+}
+
+#main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+#main-navigation li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#main-navigation a {
+    display: block;
+    padding: 0.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+#main-navigation a:hover,
+#main-navigation a.active {
+    background-color: #d6a63c;
+    color: #142b4a;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: #142b4a;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* DIRECTORY VIEW BUTTONS */
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.directory-controls button {
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #142b4a;
+    border-radius: 5px;
+    background-color: white;
+    color: #142b4a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.directory-controls button:hover,
+.directory-controls button.active {
+    background-color: #142b4a;
+    color: white;
+}
+
+/* BUSINESS GRID VIEW */
+
+#members-container.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* BUSINESS CARDS */
+
+.member-card {
+    background-color: white;
+    padding: 1.2rem;
+    border: 1px solid #dce1e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.member-card h2 {
+    color: #142b4a;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.member-card p {
+    margin: 0.6rem 0;
+}
+
+.category {
+    color: #70520d;
+    font-weight: bold;
+}
+
+.membership {
+    font-weight: bold;
+    color: #142b4a;
+}
+
+.website-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1rem;
+    background-color: #142b4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.website-link:hover {
+    background-color: #d6a63c;
+    color: #142b4a;
+}
+
+/* BUSINESS LIST VIEW */
+
+#members-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.list-view .member-card {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.list-view .member-card img {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #142b4a;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    color: #d6a63c;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #d6a63c;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #d6a63c;
+    outline-offset: 3px;
+}
