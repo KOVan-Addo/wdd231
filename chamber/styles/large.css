@@ -45,16 +45,10 @@
     /* BUSINESS LIST */
 
     #members-container.list-view .member-card {
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
+        display: block;
         text-align: left;
     }
-
-    #members-container.list-view .member-card h2 {
-        grid-column: 1 / -1;
-    }
-
- }
+}
 
 /* WIDER DESKTOP SCREENS */
 
