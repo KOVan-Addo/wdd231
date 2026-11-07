@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     font-family: "Roboto", Arial, sans-serif;
-    background-color: #f5f7fa;
+    background:
+       radial-gradient(circle at 10% 15%, #e4eaf2, transparent 35%),
+       linear-gradient(135deg, #f5f7fa, #e9eef5);
     color: #263238;
     line-height: 1.6;
 }
@@ -143,12 +146,88 @@ h1 {
 /* BUSINESS CARDS */
 
 .member-card {
-    background-color: white;
-    padding: 1.2rem;
-    border: 1px solid #dce1e8;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(145deg,
+        rgba(31, 57, 88, 0.94),
+        rgba(12, 29, 51, 0.96)
+    );
+    color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    box-shadow:
+        0 8px 24px rgba(10, 25, 45, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+    
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 14px 30px rgba(10, 25, 45, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+    
+/* BUSINESS NAME */
+   
+.member-card h2 {
+    color: #ffffff;
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+    
+/* BUSINESS CATEGORY */
+    
+.member-card .category {
+    color: #e9bd55;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+    
+/* BUSINESS DETAILS */
+    
+.member-card p {
+    color: #e5ebf3;
+    margin: 0.7rem 0;
+}
+    
+.member-card .membership {
+    color: #f2c65d;
+    font-weight: bold;
+}
+    
+/* BUSINESS IMAGE */
+    
+.member-card img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 auto 1.2rem;
+}
+    
+/* WEBSITE LINK */
+    
+.member-card .website-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.3rem;
+    background-color: #d6a63c;
+    color: #142b4a;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+    
+.member-card .website-link:hover {
+    background-color: #f0c75e;
+    color: #142b4a;
 }
 
 .member-card h2 {
@@ -204,13 +283,14 @@ h1 {
 
 .list-view .member-card {
     text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
 }
 
 .list-view .member-card img {
-    display: none;
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 /* FOOTER */
