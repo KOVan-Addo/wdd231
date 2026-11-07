@@ -175,6 +175,7 @@ h1 {
 .member-card h2 {
     color: #ffffff;
     font-size: 1.35rem;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -283,15 +284,16 @@ h1 {
 
 .list-view .member-card {
     text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
 }
 
-.list-view .member-card img {
-    display: block;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    margin-bottom: 1rem;
+/* Hide business images in list view */
+#members-container.list-view .member-card img {
+    display: none;
 }
+
 
 /* FOOTER */
 
