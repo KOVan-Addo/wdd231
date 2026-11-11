@@ -98,3 +98,32 @@
         font-size: 1.1rem;
     }
 }
+
+@media screen and (min-width: 38rem) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 38rem) {
+    .weather-container {
+        grid-template-columns: 1fr 2fr;
+        align-items: stretch;
+    }
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 38rem) {
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -334,3 +334,198 @@ button:focus-visible {
     background-color: #ffffff;
     color: #142b4a;
 }
+/* Current Events */
+.events {
+    margin: 2rem 0;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: #142b4a;
+    border-bottom: 2px solid #d6a63c;
+    padding-bottom: 0.5rem;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.event-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: #142b4a;
+    margin-top: 0;
+}
+
+.event-date {
+    font-weight: 700;
+    color: #76530c;
+}
+
+.event-card a {
+    display: inline-block;
+    background: #142b4a;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.event-card a:hover,
+.event-card a:focus {
+    background: #d6a63c;
+    color: #142b4a;
+}
+
+/* Weather Section */
+.weather {
+    margin: 2rem 0;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.current-weather,
+.weather-forecast {
+    background: #ffffff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather h3,
+.weather-forecast h3 {
+    color: #142b4a;
+    margin-top: 0;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+#forecast-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+.forecast-day {
+    background: #f1f4f8;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.forecast-day img {
+    width: 60px;
+    height: 60px;
+}
+
+.forecast-day h4 {
+    color: #142b4a;
+    margin: 0.3rem 0;
+}
+
+/* Business Spotlights */
+
+.spotlights {
+    margin: 2rem 0;
+}
+
+.spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+
+    padding: 1rem;
+    border-radius: 16px;
+
+    background:
+        radial-gradient(circle at 10% 20%,
+            rgba(214, 166, 60, 0.18),
+            transparent 40%),
+        linear-gradient(135deg,
+            rgba(20, 43, 74, 0.10),
+            rgba(214, 166, 60, 0.08));
+}
+
+.spotlight-card {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.42),
+            rgba(255, 255, 255, 0.18));
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+
+    padding: 1.5rem;
+    text-align: center;
+
+    box-shadow:
+        0 8px 24px rgba(20, 43, 74, 0.12),
+        inset 0 1px 2px rgba(255, 255, 255, 0.8);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.55),
+            rgba(255, 255, 255, 0.28));
+
+    box-shadow:
+        0 14px 30px rgba(20, 43, 74, 0.16),
+        inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.spotlight-card h3 {
+    color: #142b4a;
+    margin-top: 0;
+}
+
+.spotlight-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0.8rem auto;
+}
+
+.spotlight-card p {
+    line-height: 1.5;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    background: #142b4a;
+    color: #ffffff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.spotlight-card a:hover,
+.spotlight-card a:focus {
+    background: #d6a63c;
+    color: #142b4a;
+}
