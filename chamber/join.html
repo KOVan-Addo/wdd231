@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Apply for membership with the Accra Chamber of Commerce. Explore membership opportunities and benefits for your business or organization in Accra, Ghana.">
+    <meta name="author" content="Kelvin O. Van-Addo">
+    
+    <title>Join | Accra Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook / Open Graph Meta Tags -->
+    <meta property="og:title" content="Join the Accra Chamber of Commerce">
+    <meta property="og:description"
+        content="Become a member of the Accra Chamber of Commerce and connect with business opportunities across Accra, Ghana.">
+    <meta property="og:image" content="https://kovan-addo.github.io/wdd231/chamber/images/chamber-social.jpg">
+    <meta property="og:url" content="https://kovan-addo.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-branding">
+            <a href="index.html" class="logo">
+                <img src="images/chamber-logo.png" alt="Accra Chamber of Commerce logo">
+            </a>
+
+            <div class="site-name">
+                <span>Accra</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Accra Chamber of Commerce</h1>
+    
+        <section class="membership-application">
+            <h2>Membership Application</h2>
+        
+            <form method="get" action="thankyou.html">
+        
+                <fieldset>
+                    <legend>Personal Information</legend>
+        
+                    <label for="first-name">
+                        First Name
+                        <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+                    
+                    <label for="last-name">
+                        Last Name
+                        <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+                    
+                    <label for="organization-title">
+                        Organizational Title
+                        <input type="text" id="organization-title" name="organizationTitle"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                    </label>
+                    
+                    <label for="email">
+                        Email Address
+                        <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </label>
+                    
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+        
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Business Information</legend>
+        
+                    <label for="organization">
+                        Business / Organization Name
+                        <input type="text" id="organization" name="organization" title="Enter your business or organization name"
+                            autocomplete="organization" required>
+                    </label>
+                    
+                    <label for="membership-level">
+                        Membership Level
+                        <select id="membership-level" name="membershipLevel" title="Select your preferred membership level" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <label for="description">
+                        Business / Organization Description
+                        <textarea id="description" name="description" title="Briefly describe your business or organization"
+                            rows="5"></textarea>
+                    </label>
+
+        
+                </fieldset>
+        
+                <input type="hidden" id="timestamp" name="timestamp">
+        
+                <input type="submit" value="Submit Membership Application">
+        
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-information">
+            <h2>Accra Chamber of Commerce</h2>
+            <p>Accra, Greater Accra Region, Ghana</p>
+            <p>Email: accra@ghanachamber.org</p>
+            <p>Phone: +233 20 435 5220</p>
+        </div>
+
+        <div class="development-information">
+            <p>&copy; <span id="current-year"></span> Accra Chamber of Commerce</p>
+            <p>Developed by Kelvin O. Van-Addo</p>
+            <p>WDD 231 - Web Frontend Development I</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
