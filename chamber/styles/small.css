@@ -774,3 +774,66 @@ button:focus-visible {
         transition: none;
     }
 }
+/* =================================
+   APPLICATION CONFIRMATION PAGE
+================================= */
+
+.application-confirmation {
+    max-width: 750px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(20, 43, 74, 0.10);
+}
+
+.application-confirmation h2 {
+    color: #142b4a;
+    border-bottom: 2px solid #d6a63c;
+    padding-bottom: 0.5rem;
+}
+
+.application-confirmation>p {
+    line-height: 1.7;
+    color: #263238;
+}
+
+#application-details {
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+    background: #f1f5f9;
+    border-left: 4px solid #d6a63c;
+    border-radius: 6px;
+}
+
+#application-details p {
+    margin: 0.8rem 0;
+    line-height: 1.5;
+    color: #263238;
+}
+
+#application-details strong {
+    color: #142b4a;
+}
+
+.return-home {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.85rem 1.4rem;
+    background: #142b4a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.return-home:hover {
+    background: #d6a63c;
+    color: #142b4a;
+}
+
+.return-home:focus-visible {
+    outline: 3px solid #d6a63c;
+    outline-offset: 4px;
+}

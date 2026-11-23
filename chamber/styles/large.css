@@ -158,3 +158,40 @@
         padding: 1.2rem;
     }
 }
+/* =================================
+   APPLICATION CONFIRMATION - DESKTOP
+================================= */
+
+@media screen and (min-width: 64rem) {
+    .application-confirmation {
+        max-width: 850px;
+        margin: 3rem auto;
+        padding: 2.5rem 3rem;
+    }
+
+    .application-confirmation h2 {
+        margin-bottom: 1.2rem;
+    }
+
+    #application-details {
+        padding: 1.5rem 2rem;
+        margin: 2rem 0;
+    }
+
+    #application-details p {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 1rem;
+        align-items: baseline;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #dbe3ec;
+    }
+
+    #application-details p:last-child {
+        border-bottom: none;
+    }
+
+    .return-home {
+        padding: 1rem 1.8rem;
+    }
+}
