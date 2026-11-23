@@ -127,3 +127,34 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* =================================
+   MEMBERSHIP JOIN PAGE - DESKTOP
+================================= */
+
+@media screen and (min-width: 64rem) {
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.6fr) minmax(250px, 0.8fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .membership-application {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .membership-levels {
+        margin: 0;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .membership-card {
+        padding: 1.2rem;
+    }
+}

@@ -8,7 +8,7 @@
     <meta name="description"
         content="Apply for membership with the Accra Chamber of Commerce. Explore membership opportunities and benefits for your business or organization in Accra, Ghana.">
     <meta name="author" content="Kelvin O. Van-Addo">
-    
+
     <title>Join | Accra Chamber of Commerce</title>
 
     <!-- Favicon -->
@@ -40,6 +40,7 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="site-branding">
             <a href="index.html" class="logo">
@@ -69,86 +70,233 @@
         </nav>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
         <h1>Join the Accra Chamber of Commerce</h1>
-    
-        <section class="membership-application">
-            <h2>Membership Application</h2>
-        
-            <form method="get" action="thankyou.html">
-        
-                <fieldset>
-                    <legend>Personal Information</legend>
-        
-                    <label for="first-name">
-                        First Name
-                        <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name"
-                            required>
-                    </label>
-                    
-                    <label for="last-name">
-                        Last Name
-                        <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
-                    </label>
-                    
-                    <label for="organization-title">
-                        Organizational Title
-                        <input type="text" id="organization-title" name="organizationTitle"
-                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
-                            autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
-                    </label>
-                    
-                    <label for="email">
-                        Email Address
-                        <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email"
-                            placeholder="example@email.com" required>
-                    </label>
-                    
-                    <label for="phone">
-                        Mobile Phone Number
-                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
-                    </label>
 
-        
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Business Information</legend>
-        
-                    <label for="organization">
-                        Business / Organization Name
-                        <input type="text" id="organization" name="organization" title="Enter your business or organization name"
-                            autocomplete="organization" required>
-                    </label>
-                    
-                    <label for="membership-level">
-                        Membership Level
-                        <select id="membership-level" name="membershipLevel" title="Select your preferred membership level" required>
-                            <option value="" disabled selected>Select a membership level</option>
-                            <option value="np">NP Membership</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>
-                    
-                    <label for="description">
-                        Business / Organization Description
-                        <textarea id="description" name="description" title="Briefly describe your business or organization"
-                            rows="5"></textarea>
-                    </label>
+        <div class="join-layout">
 
-        
-                </fieldset>
-        
-                <input type="hidden" id="timestamp" name="timestamp">
-        
-                <input type="submit" value="Submit Membership Application">
-        
-            </form>
-        </section>
+            <!-- MEMBERSHIP APPLICATION FORM -->
+            <section class="membership-application">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <!-- PERSONAL INFORMATION -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label for="first-name">
+                            First Name
+                            <input type="text" id="first-name" name="firstName" title="Enter your first name"
+                                autocomplete="given-name" required>
+                        </label>
+
+                        <label for="last-name">
+                            Last Name
+                            <input type="text" id="last-name" name="lastName" title="Enter your last name"
+                                autocomplete="family-name" required>
+                        </label>
+
+                        <label for="organization-title">
+                            Organizational Title
+                            <input type="text" id="organization-title" name="organizationTitle"
+                                title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                                autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                        </label>
+
+                        <label for="email">
+                            Email Address
+                            <input type="email" id="email" name="email" title="Enter a valid email address"
+                                autocomplete="email" placeholder="example@email.com" required>
+                        </label>
+
+                        <label for="phone">
+                            Mobile Phone Number
+                            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                                autocomplete="tel" required>
+                        </label>
+
+                    </fieldset>
+
+                    <!-- BUSINESS INFORMATION -->
+                    <fieldset>
+                        <legend>Business Information</legend>
+
+                        <label for="organization">
+                            Business / Organization Name
+                            <input type="text" id="organization" name="organization"
+                                title="Enter your business or organization name" autocomplete="organization" required>
+                        </label>
+
+                        <label for="membership-level">
+                            Membership Level
+                            <select id="membership-level" name="membershipLevel"
+                                title="Select your preferred membership level" required>
+                                <option value="" disabled selected>
+                                    Select a membership level
+                                </option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+
+                        <label for="description">
+                            Business / Organization Description
+                            <textarea id="description" name="description"
+                                title="Briefly describe your business or organization" rows="5"></textarea>
+                        </label>
+
+                    </fieldset>
+
+                    <!-- HIDDEN TIMESTAMP -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <!-- SUBMIT BUTTON -->
+                    <input type="submit" value="Submit Membership Application">
+
+                </form>
+            </section>
+
+            <!-- MEMBERSHIP LEVEL CARDS -->
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+                <p>Explore the benefits of joining our Chamber.</p>
+
+                <div class="membership-cards">
+
+                    <!-- NP MEMBERSHIP CARD -->
+                    <article class="membership-card np-card">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations</p>
+                        <button type="button" data-modal="np-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <!-- BRONZE MEMBERSHIP CARD -->
+                    <article class="membership-card bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Build your business connections</p>
+                        <button type="button" data-modal="bronze-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <!-- SILVER MEMBERSHIP CARD -->
+                    <article class="membership-card silver-card">
+                        <h3>Silver Membership</h3>
+                        <p>Grow your business visibility</p>
+                        <button type="button" data-modal="silver-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <!-- GOLD MEMBERSHIP CARD -->
+                    <article class="membership-card gold-card">
+                        <h3>Gold Membership</h3>
+                        <p>Access premium opportunities</p>
+                        <button type="button" data-modal="gold-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+        <!-- END OF JOIN LAYOUT -->
+
+        <!-- NP MEMBERSHIP DIALOG -->
+        <dialog id="np-modal" class="membership-dialog" aria-labelledby="np-title">
+            <div class="dialog-content">
+                <button type="button" class="close-dialog" aria-label="Close NP membership details">&times;</button>
+
+                <h2 id="np-title">NP Membership Benefits</h2>
+
+                <p>
+                    Designed for non-profit organizations seeking to connect
+                    with the local business community.
+                </p>
+
+                <ul>
+                    <li>Free membership with no annual fee.</li>
+                    <li>Networking opportunities with other members.</li>
+                    <li>Invitations to selected Chamber community events.</li>
+                    <li>Access to general Chamber announcements and updates.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <!-- BRONZE MEMBERSHIP DIALOG -->
+        <dialog id="bronze-modal" class="membership-dialog" aria-labelledby="bronze-title">
+            <div class="dialog-content">
+                <button type="button" class="close-dialog" aria-label="Close Bronze membership details">&times;</button>
+
+                <h2 id="bronze-title">Bronze Membership Benefits</h2>
+
+                <p>
+                    A starting point for businesses looking to establish
+                    valuable connections.
+                </p>
+
+                <ul>
+                    <li>All applicable NP-level networking opportunities.</li>
+                    <li>Business listing in the Chamber directory.</li>
+                    <li>Member news and business updates.</li>
+                    <li>Invitations to selected networking events.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <!-- SILVER MEMBERSHIP DIALOG -->
+        <dialog id="silver-modal" class="membership-dialog" aria-labelledby="silver-title">
+            <div class="dialog-content">
+                <button type="button" class="close-dialog" aria-label="Close Silver membership details">&times;</button>
+
+                <h2 id="silver-title">Silver Membership Benefits</h2>
+
+                <p>
+                    For businesses ready to strengthen their visibility
+                    and develop their capabilities.
+                </p>
+
+                <ul>
+                    <li>All Bronze membership benefits.</li>
+                    <li>Discounted access to selected training programmes.</li>
+                    <li>Additional promotional opportunities.</li>
+                    <li>Discounts on selected Chamber events.</li>
+                </ul>
+            </div>
+        </dialog>
+
+        <!-- GOLD MEMBERSHIP DIALOG -->
+        <dialog id="gold-modal" class="membership-dialog" aria-labelledby="gold-title">
+            <div class="dialog-content">
+                <button type="button" class="close-dialog" aria-label="Close Gold membership details">&times;</button>
+
+                <h2 id="gold-title">Gold Membership Benefits</h2>
+
+                <p>
+                    Our premium membership option for businesses seeking
+                    greater visibility and engagement.
+                </p>
+
+                <ul>
+                    <li>All Silver membership benefits.</li>
+                    <li>Priority business promotion opportunities.</li>
+                    <li>Featured business spotlight opportunities.</li>
+                    <li>Priority invitations to selected Chamber events.</li>
+                    <li>Enhanced networking and partnership opportunities.</li>
+                </ul>
+            </div>
+        </dialog>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="contact-information">
             <h2>Accra Chamber of Commerce</h2>

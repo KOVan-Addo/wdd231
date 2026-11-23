@@ -529,3 +529,248 @@ button:focus-visible {
     background: #d6a63c;
     color: #142b4a;
 }
+/* =================================
+   CHAMBER MEMBERSHIP JOIN PAGE
+================================= */
+
+.membership-application {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(20, 43, 74, 0.10);
+    margin: 2rem 0;
+}
+
+.membership-application h2,
+.membership-levels h2 {
+    color: #142b4a;
+    border-bottom: 2px solid #d6a63c;
+    padding-bottom: 0.5rem;
+}
+
+/* FORM GROUPS */
+
+.membership-application fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.membership-application legend {
+    color: #142b4a;
+    font-weight: 700;
+    padding: 0 0.5rem;
+}
+
+/* FORM LABELS AND INPUTS */
+
+.membership-application label {
+    display: block;
+    color: #263238;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.membership-application input:not([type="hidden"]):not([type="submit"]),
+.membership-application select,
+.membership-application textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.8rem;
+    border: 1px solid #9aa8b8;
+    border-radius: 6px;
+    background: #f8fafc;
+    color: #263238;
+    font: inherit;
+}
+
+.membership-application input:focus,
+.membership-application select:focus,
+.membership-application textarea:focus {
+    outline: 3px solid #d6a63c;
+    outline-offset: 2px;
+    border-color: #142b4a;
+}
+
+.membership-application textarea {
+    resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+
+.membership-application input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #142b4a;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership-application input[type="submit"]:hover {
+    background: #d6a63c;
+    color: #142b4a;
+}
+
+/* MEMBERSHIP LEVEL CARDS */
+
+.membership-levels {
+    margin: 2.5rem 0;
+}
+
+.membership-levels>p {
+    margin-bottom: 1.5rem;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.membership-card {
+    background: linear-gradient(145deg,
+            rgba(31, 57, 88, 0.96),
+            rgba(12, 29, 51, 0.98));
+    color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(10, 25, 45, 0.16);
+    opacity: 0;
+    animation: membership-entrance 0.8s ease forwards;
+}
+
+.membership-card h3 {
+    color: #f2c65d;
+    margin-top: 0;
+}
+
+.membership-card p {
+    color: #e5ebf3;
+}
+
+.membership-card button {
+    margin-top: 0.8rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #d6a63c;
+    color: #142b4a;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-card button:hover {
+    background: #ffffff;
+}
+
+/* INITIAL CARD ANIMATION */
+
+@keyframes membership-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.np-card {
+    animation-delay: 0.1s;
+}
+
+.bronze-card {
+    animation-delay: 0.3s;
+}
+
+.silver-card {
+    animation-delay: 0.5s;
+}
+
+.gold-card {
+    animation-delay: 0.7s;
+}
+
+/* MEMBERSHIP DIALOGS */
+
+.membership-dialog {
+    width: min(90%, 500px);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.membership-dialog::backdrop {
+    background: rgba(10, 25, 45, 0.7);
+    backdrop-filter: blur(3px);
+}
+
+.dialog-content {
+    position: relative;
+    padding: 2rem;
+    color: #263238;
+}
+
+.dialog-content h2 {
+    color: #142b4a;
+    padding-right: 1.5rem;
+}
+
+.dialog-content li {
+    margin-bottom: 0.7rem;
+}
+
+.close-dialog {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.9rem;
+    border: none;
+    background: transparent;
+    color: #142b4a;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-dialog:hover {
+    color: #9a6700;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.membership-card button:focus-visible,
+.close-dialog:focus-visible,
+.membership-application input[type="submit"]:focus-visible {
+    outline: 3px solid #d6a63c;
+    outline-offset: 4px;
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .membership-application input[type="submit"] {
+        transition: none;
+    }
+}
