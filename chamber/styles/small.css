@@ -837,3 +837,157 @@ button:focus-visible {
     outline: 3px solid #d6a63c;
     outline-offset: 4px;
 }
+/* =================================
+   DISCOVER PAGE - BASE / MOBILE
+================================= */
+
+.discover-intro {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-left: 5px solid #d6a63c;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(20, 43, 74, 0.08);
+}
+
+.discover-intro h2,
+.discover-section>h2 {
+    color: #142b4a;
+}
+
+.discover-intro p {
+    line-height: 1.7;
+}
+
+.visit-message {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #142b4a;
+    color: #ffffff;
+    border-left: 5px solid #d6a63c;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.discover-section {
+    margin: 2rem 0;
+}
+
+.discover-section>h2 {
+    border-bottom: 2px solid #d6a63c;
+    padding-bottom: 0.5rem;
+}
+
+/* Attraction grid - small screens */
+
+.attraction-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.attraction-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.attraction-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.attraction-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.attraction-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.attraction-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.attraction-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.attraction-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.attraction-card:nth-child(8) {
+    grid-area: card8;
+}
+
+/* Attraction card appearance */
+
+.attraction-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(20, 43, 74, 0.10);
+}
+
+.attraction-card h2 {
+    color: #142b4a;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.attraction-card figure {
+    margin: 0 0 1rem;
+}
+
+.attraction-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.attraction-card address {
+    color: #76530c;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0.8rem 0;
+}
+
+.attraction-card p {
+    line-height: 1.6;
+}
+
+.attraction-card button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #142b4a;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attraction-card button:hover,
+.attraction-card button:focus-visible {
+    background: #d6a63c;
+    color: #142b4a;
+}
+
+.attraction-card button:focus-visible {
+    outline: 3px solid #142b4a;
+    outline-offset: 3px;
+}

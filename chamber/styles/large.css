@@ -195,3 +195,69 @@
         padding: 1rem 1.8rem;
     }
 }
+/* =================================
+   DISCOVER PAGE - RESPONSIVE GRID
+================================= */
+
+/* MEDIUM SCREENS: 641px - 1024px */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .attraction-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "card1 card1"
+            "card2 card3"
+            "card4 card4"
+            "card5 card6"
+            "card7 card8";
+        gap: 1.5rem;
+    }
+
+    .attraction-card {
+        padding: 1.2rem;
+    }
+}
+
+/* LARGE SCREENS: 1025px AND ABOVE */
+
+@media screen and (min-width: 1025px) {
+
+    .attraction-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card5 card6"
+            "card7 card7 card8 card8";
+        gap: 1.5rem;
+    }
+
+    .attraction-card {
+        padding: 1.3rem;
+    }
+
+    /* Desktop-only image hover effect */
+    @media (hover: hover) and (pointer: fine) {
+        .attraction-card img {
+            transition: transform 0.35s ease, filter 0.35s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.04);
+            filter: brightness(1.08);
+        }
+
+        .attraction-card figure {
+            overflow: hidden;
+            border-radius: 8px;
+        }
+    }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .attraction-card img {
+        transition: none;
+    }
+}
