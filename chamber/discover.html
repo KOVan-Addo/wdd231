@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore Accra's notable landmarks, cultural attractions, recreational spaces and places of interest through the Accra Chamber of Commerce Discover page.">
+
+    <meta name="author" content="Kelvin O. Van-Addo">
+
+    <title>Discover Accra | Accra Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Discover Accra | Accra Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore the landmarks, attractions and places that make Accra a vibrant destination for business and visitors.">
+    <meta property="og:image" content="https://kovan-addo.github.io/wdd231/chamber/images/chamber-social.jpg">
+    <meta property="og:url" content="https://kovan-addo.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="site-branding">
+            <a href="index.html" class="logo">
+                <img src="images/chamber-logo.png" alt="Accra Chamber of Commerce logo">
+            </a>
+
+            <div class="site-name">
+                <span>Accra</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-controls="main-navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Accra</h1>
+    
+        <!-- Introduction -->
+        <section class="discover-intro">
+            <h2>Explore the Heart of Ghana</h2>
+            <p>
+                From historic landmarks and cultural institutions to vibrant
+                markets and beautiful beaches, Accra offers experiences that
+                reflect the city's rich heritage and modern character.
+                Explore some of the places that make our city unique.
+            </p>
+        </section>
+    
+        <!-- Visitor Message -->
+        <aside id="visit-message" class="visit-message" aria-live="polite"></aside>
+    
+        <!-- Attraction Cards -->
+        <section class="discover-section">
+            <h2>Places Worth Discovering</h2>
+    
+            <div id="attraction-grid" class="attraction-grid">
+                <!-- Attraction cards are generated dynamically by discover.js -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="contact-information">
+            <h2>Accra Chamber of Commerce</h2>
+            <p>Accra, Greater Accra Region, Ghana</p>
+            <p>Email: accra@ghanachamber.org</p>
+            <p>Phone: +233 20 435 5220</p>
+        </div>
+
+        <div class="development-information">
+            <p>&copy; <span id="current-year"></span> Accra Chamber of Commerce</p>
+            <p>Developed by Kelvin O. Van-Addo</p>
+            <p>WDD 231 - Web Frontend Development I</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
