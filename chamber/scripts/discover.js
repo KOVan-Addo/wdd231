@@ -46,3 +46,30 @@ function displayAttractions(items) {
 
 // Display all attractions
 displayAttractions(attractions);
+
+// Visitor tracking using localStorage
+const visitMessage = document.querySelector("#visit-message");
+const currentVisit = Date.now();
+const lastVisit = Number(localStorage.getItem("lastVisit"));
+
+if (!lastVisit) {
+    visitMessage.textContent =
+        "Welcome! Let us know if you have any questions.";
+} else {
+    const timeDifference = currentVisit - lastVisit;
+    const daysBetweenVisits = Math.floor(
+        timeDifference / (1000 * 60 * 60 * 24)
+    );
+
+    if (daysBetweenVisits < 1) {
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else {
+        const dayText = daysBetweenVisits === 1 ? "day" : "days";
+
+        visitMessage.textContent =
+            `You last visited ${daysBetweenVisits} ${dayText} ago.`;
+    }
+}
+
+// Save the current visit date
+localStorage.setItem("lastVisit", currentVisit);
